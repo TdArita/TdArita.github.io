@@ -229,6 +229,162 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/30/bigcat-Day2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TD Arita">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="myBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/30/bigcat-Day2/" itemprop="url">bigcat-Day2</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-30T20:38:51+08:00">
+                2019-04-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="笔记Day-2"><a href="#笔记Day-2" class="headerlink" title="笔记Day 2"></a>笔记Day 2</h2><h3 id="通识介绍"><a href="#通识介绍" class="headerlink" title="通识介绍"></a>通识介绍</h3><h4 id="UI-GUI-CLI"><a href="#UI-GUI-CLI" class="headerlink" title="UI GUI CLI"></a>UI GUI CLI</h4><h4 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h4><blockquote>
+<p>内核 </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">渲染引擎trigent(MS) </span><br><span class="line"></span><br><span class="line">webkit(safari)</span><br><span class="line"></span><br><span class="line">chrome =&gt; webkit =&gt;blink</span><br><span class="line"></span><br><span class="line">firefox=&gt;gecko </span><br><span class="line"></span><br><span class="line">安卓系统=&gt;webview 独立更新</span><br><span class="line"></span><br><span class="line">ios系统不允许自带内核的浏览器</span><br></pre></td></tr></table></figure>
+<p><code>DS(sigital signal 数字信号)</code>5V电压(网线)</p>
+<p><code>bit</code> 一根线 0/1</p>
+<p>1<code>Byte</code> = 8<code>bit</code> 2**8 (0-255种状态)</p>
+<h4 id="图片格式"><a href="#图片格式" class="headerlink" title="图片格式"></a>图片格式</h4><p><code>jpg</code> 有损压缩</p>
+<p><code>png</code> 无损压缩 支持透明色(Alpha通道，RGBA) =&gt;CSS渐变效果</p>
+<p><code>RGB（256*256*256）</code>  24位 3字节 </p>
+<p><code>gif</code> 有256种颜色供选择 无损压缩(原始照片不超过256种颜色) 只存储变化的点 支持透明度(只支持两种透明度)</p>
+<p><code>bmp</code> 无压缩，无损  winHex查看 源格式中第3-6字节为图像大小，用·Byte表示 后面字节转换为10进制放前面</p>
+<p><code>webp</code> Google发明 有损压缩 各方面优于jpg 适合在移动端 支持Alpha通道</p>
+<h4 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h4><p><code>ASCII</code> (American Standard Code for Information Interchange) 与 <code>Unicode</code> </p>
+<p><code>ASCII</code> 最多256个</p>
+<p> <code>GB2312</code> 编码常见汉字(汉字2字节 最多65536个 英文仍为单字节) 不能编码扩展ASCII表</p>
+<p> 特殊要记的Ascii <code>10</code>(换行) <code>13</code> (回车)  <code>65</code>(A) <code>97</code>(a) <code>32</code>(空格)  <code>30</code>(数字0)</p>
+<p><code>Unicode</code>  保存全球文字，符号 //所有编码兼容<code>ASCII</code> 97表示a</p>
+<p><code>UTF-8</code> 是Unicode 编码的一种形式 <code>我</code> 25105</p>
+<p>字节序标记BOM UTF-8 BOM</p>
+<h4 id="命令行-CLI-CommandLineInterface"><a href="#命令行-CLI-CommandLineInterface" class="headerlink" title="命令行(CLI/CommandLineInterface)"></a>命令行(CLI/CommandLineInterface)</h4><p><code>API</code> 应用编程接口</p>
+<p>不同系统的命令行区别 </p>
+<p>Linux</p>
+<p>windows上模拟Linux: cgyin(太大) 精简后为mingw(git bash自带)</p>
+<p>wsl(windows subsystem for linux) 在windows10中模拟Linux</p>
+<blockquote>
+<p>命令行重要概念 </p>
+</blockquote>
+<p>工作目录</p>
+<p><code>$pwd</code> 打印当前目录</p>
+<p><code>$clear&amp;Ctrl+l</code> 清屏</p>
+<p><code>$ ls --long-output / ls-l</code>  双划线 选项全写 但画线 简写</p>
+<p><code>$ ls --help</code> ls命令的帮助文档</p>
+<p><code>$ echo xxx &gt; xxx.txt</code>  将xxx写入xxx.txt</p>
+<p><code>$ touch</code>  新建文件</p>
+<p><code>$ mv a.txt b.txt</code>  a.txt 改为 b.txt</p>
+<p><code>$ rm xxx.txt</code> 删除xxx.txt文件  <code>rm -rf *</code> 删除文件夹中所有文件 </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/14/20-JSd的数据/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -880,7 +1036,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

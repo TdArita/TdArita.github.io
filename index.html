@@ -127,6 +127,15 @@
 
 
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-139590704-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
 
 
 
@@ -319,46 +328,17 @@
 
       
         
-          
-            <h2 id="笔记Day-2"><a href="#笔记Day-2" class="headerlink" title="笔记Day 2"></a>笔记Day 2</h2><h3 id="通识介绍"><a href="#通识介绍" class="headerlink" title="通识介绍"></a>通识介绍</h3><h4 id="UI-GUI-CLI"><a href="#UI-GUI-CLI" class="headerlink" title="UI GUI CLI"></a>UI GUI CLI</h4><h4 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h4><blockquote>
+          <h2 id="笔记Day-2"><a href="#笔记Day-2" class="headerlink" title="笔记Day 2"></a>笔记Day 2</h2><h3 id="通识介绍"><a href="#通识介绍" class="headerlink" title="通识介绍"></a>通识介绍</h3><h4 id="UI-GUI-CLI"><a href="#UI-GUI-CLI" class="headerlink" title="UI GUI CLI"></a>UI GUI CLI</h4><h4 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h4><blockquote>
 <p>内核 </p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">渲染引擎trigent(MS) </span><br><span class="line"></span><br><span class="line">webkit(safari)</span><br><span class="line"></span><br><span class="line">chrome =&gt; webkit =&gt;blink</span><br><span class="line"></span><br><span class="line">firefox=&gt;gecko </span><br><span class="line"></span><br><span class="line">安卓系统=&gt;webview 独立更新</span><br><span class="line"></span><br><span class="line">ios系统不允许自带内核的浏览器</span><br></pre></td></tr></table></figure>
-<p><code>DS(sigital signal 数字信号)</code>5V电压(网线)</p>
-<p><code>bit</code> 一根线 0/1</p>
-<p>1<code>Byte</code> = 8<code>bit</code> 2**8 (0-255种状态)</p>
-<h4 id="图片格式"><a href="#图片格式" class="headerlink" title="图片格式"></a>图片格式</h4><p><code>jpg</code> 有损压缩</p>
-<p><code>png</code> 无损压缩 支持透明色(Alpha通道，RGBA) =&gt;CSS渐变效果</p>
-<p><code>RGB（256*256*256）</code>  24位 3字节 </p>
-<p><code>gif</code> 有256种颜色供选择 无损压缩(原始照片不超过256种颜色) 只存储变化的点 支持透明度(只支持两种透明度)</p>
-<p><code>bmp</code> 无压缩，无损  winHex查看 源格式中第3-6字节为图像大小，用·Byte表示 后面字节转换为10进制放前面</p>
-<p><code>webp</code> Google发明 有损压缩 各方面优于jpg 适合在移动端 支持Alpha通道</p>
-<h4 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h4><p><code>ASCII</code> (American Standard Code for Information Interchange) 与 <code>Unicode</code> </p>
-<p><code>ASCII</code> 最多256个</p>
-<p> <code>GB2312</code> 编码常见汉字(汉字2字节 最多65536个 英文仍为单字节) 不能编码扩展ASCII表</p>
-<p> 特殊要记的Ascii <code>10</code>(换行) <code>13</code> (回车)  <code>65</code>(A) <code>97</code>(a) <code>32</code>(空格)  <code>30</code>(数字0)</p>
-<p><code>Unicode</code>  保存全球文字，符号 //所有编码兼容<code>ASCII</code> 97表示a</p>
-<p><code>UTF-8</code> 是Unicode 编码的一种形式 <code>我</code> 25105</p>
-<p>字节序标记BOM UTF-8 BOM</p>
-<h4 id="命令行-CLI-CommandLineInterface"><a href="#命令行-CLI-CommandLineInterface" class="headerlink" title="命令行(CLI/CommandLineInterface)"></a>命令行(CLI/CommandLineInterface)</h4><p><code>API</code> 应用编程接口</p>
-<p>不同系统的命令行区别 </p>
-<p>Linux</p>
-<p>windows上模拟Linux: cgyin(太大) 精简后为mingw(git bash自带)</p>
-<p>wsl(windows subsystem for linux) 在windows10中模拟Linux</p>
-<blockquote>
-<p>命令行重要概念 </p>
-</blockquote>
-<p>工作目录</p>
-<p><code>$pwd</code> 打印当前目录</p>
-<p><code>$clear&amp;Ctrl+l</code> 清屏</p>
-<p><code>$ ls --long-output / ls-l</code>  双划线 选项全写 但画线 简写</p>
-<p><code>$ ls --help</code> ls命令的帮助文档</p>
-<p><code>$ echo xxx &gt; xxx.txt</code>  将xxx写入xxx.txt</p>
-<p><code>$ touch</code>  新建文件</p>
-<p><code>$ mv a.txt b.txt</code>  a.txt 改为 b.txt</p>
-<p><code>$ rm xxx.txt</code> 删除xxx.txt文件  <code>rm -rf *</code> 删除文件夹中所有文件 </p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/30/bigcat-Day2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -475,22 +455,16 @@
 
       
         
-          
-            <h2 id="20-JS的数据"><a href="#20-JS的数据" class="headerlink" title="20.JS的数据"></a>20.JS的数据</h2><h3 id="JS的历史"><a href="#JS的历史" class="headerlink" title="JS的历史"></a>JS的历史</h3><h4 id="JavaScript是网景的商标™"><a href="#JavaScript是网景的商标™" class="headerlink" title="JavaScript是网景的商标™"></a>JavaScript是网景的商标™</h4><h4 id="JavaScript7种数据类型"><a href="#JavaScript7种数据类型" class="headerlink" title="JavaScript7种数据类型"></a>JavaScript7种数据类型</h4><p><code>number</code> 数字<br><code>string</code> 字符串<br><code>boolean</code> 布尔值<br><code>symbol</code> 符号<br><code>null</code><br><code>undefined</code><br><code>object</code> 对象</p>
+          <h2 id="20-JS的数据"><a href="#20-JS的数据" class="headerlink" title="20.JS的数据"></a>20.JS的数据</h2><h3 id="JS的历史"><a href="#JS的历史" class="headerlink" title="JS的历史"></a>JS的历史</h3><h4 id="JavaScript是网景的商标™"><a href="#JavaScript是网景的商标™" class="headerlink" title="JavaScript是网景的商标™"></a>JavaScript是网景的商标™</h4><h4 id="JavaScript7种数据类型"><a href="#JavaScript7种数据类型" class="headerlink" title="JavaScript7种数据类型"></a>JavaScript7种数据类型</h4><p><code>number</code> 数字<br><code>string</code> 字符串<br><code>boolean</code> 布尔值<br><code>symbol</code> 符号<br><code>null</code><br><code>undefined</code><br><code>object</code> 对象</p>
 <h4 id="number-数字"><a href="#number-数字" class="headerlink" title="number 数字"></a><code>number</code> 数字</h4><p>二进制 0b11 以0b开头<br>八进制 011   以0开头<br>十六进制 0x11 以0x开头</p>
-<h4 id="String-字符串"><a href="#String-字符串" class="headerlink" title="String 字符串"></a><code>String</code> 字符串</h4><p> ‘’和””空字符串 字符串长度0<br> ‘ ‘和” “中间有野葛空格 字符串长度1<br> <code>转义</code> 看《编码》 反斜杠\ 正确的向浏览器表达意思<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a = &apos;\&apos;&apos; 单引号</span><br><span class="line">var n = &apos; \n&apos; 回车（13）</span><br><span class="line">var t = &apos; \t&apos; Tab（制表符）</span><br><span class="line">var b = &apos;&apos;\\&apos;&apos; \符号</span><br></pre></td></tr></table></figure></p>
-<p> 多行字符串<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> var s = &apos;12345\</span><br><span class="line">            67890&apos;</span><br><span class="line"> </span><br><span class="line"> var s2 = &apos;12345&apos; + &apos;67890&apos; //更好</span><br><span class="line"> </span><br><span class="line"> var s3 = &apos;123456   \       </span><br><span class="line">              67890&apos; //会报错，注意空格的转义</span><br><span class="line"></span><br><span class="line">var s4 = `12345</span><br><span class="line">67890` //ES6 的语法 注意不要写空格，包含回车</span><br></pre></td></tr></table></figure></p>
-<h4 id="boolean-布尔值"><a href="#boolean-布尔值" class="headerlink" title="boolean 布尔值"></a><code>boolean</code> 布尔值</h4><p> 是个人，发命令逻辑学<br> 基本单位 <code>true</code> <code>false</code></p>
-<p> &amp;&amp;与运算\或运算<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a&amp;&amp;b(a,b都为true为真)</span><br><span class="line">a\\b(a,b都为false为falsr)</span><br></pre></td></tr></table></figure></p>
-<h4 id="null-类型-和-undefined-类型"><a href="#null-类型-和-undefined-类型" class="headerlink" title="null  类型 和 undefined 类型"></a><code>null</code>  类型 和 <code>undefined</code> 类型</h4><p>JS的原创 什么都没有<br>区别1:变量没赋值，为undefined<br>区别2:有一个对象，不想赋值，推荐给null var obj = null，有一个非对象，不想赋值，推荐给undefined<br>对象对应null 非对象对应undefined都表示没有给值</p>
-<h4 id="object-对象-哈希表（key-value）"><a href="#object-对象-哈希表（key-value）" class="headerlink" title="object 对象/哈希表（key,value）"></a><code>object</code> 对象/哈希表（key,value）</h4><p>之前的为基本类型，object是复杂类型，由简单类型组成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var name = &apos;arita&apos;</span><br><span class="line">var age = 24</span><br><span class="line">var gender = &apos;male&apos;</span><br><span class="line">如可以表示为</span><br><span class="line">var person = &#123;</span><br><span class="line">&apos;name&apos;:&apos;arita&apos;, //逗号隔开，不一定只有一个值</span><br><span class="line">&apos;age&apos;:24,</span><br><span class="line">&apos;gender&apos;:&apos;male&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>语法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var person=&#123;</span><br><span class="line">    name : &apos;arita&apos;</span><br><span class="line">    age : 24,</span><br><span class="line">    children: &#123; name:&apos;xxx&apos;, age:1,&#125;,    </span><br><span class="line">&#125;</span><br><span class="line">引用</span><br><span class="line">person[&apos;name&apos;] //单引号不能省略</span><br><span class="line">person.name //当符合标识符格式时（特例）</span><br><span class="line">person[name] 相当于 person[&apos;arita&apos; ]</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&apos;&apos; : &apos;arita&apos;//可以</span><br><span class="line">person[&apos;&apos;] = &apos;frank</span><br><span class="line">9a : &apos;arita&apos; //不可以 不符合标识符原则</span><br><span class="line">&apos;9a&apos; : &apos;arita&apos;</span><br><span class="line">//加引号可以都行</span><br></pre></td></tr></table></figure>
-<p>删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">delete person.name //undefined（无value，无key）</span><br><span class="line">delete </span><br><span class="line">person.name = undefined //key存在</span><br></pre></td></tr></table></figure></p>
-<p>遍历对象<br><code>for in</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">for(var key in person)&#123;</span><br><span class="line">console.log(key)</span><br><span class="line">&#125;</span><br><span class="line">for(var key in person)&#123;</span><br><span class="line">console.log(key, person[key]) //不能person.key 因为key是一个字符串</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p> <code>typeof</code>  的BUG<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.typeof null // &apos;object&apos;</span><br><span class="line">typeof fn // &apos; function&apos;</span><br></pre></td></tr></table></figure></p>
-
-          
+<h4 id="String-字符串"><a href="#String-字符串" class="headerlink" title="String 字符串"></a><code>String</code> 字符串</h4><p> ‘’和””空字符串 字符串长度0<br> ‘ ‘和” “中间有野葛空格 字符串长度1<br> <code>转义</code> 看《编码》 反斜杠\ 正确的向浏览器表达意思</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/03/14/20-JSd的数据/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -846,18 +820,15 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/12/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -970,25 +941,25 @@
                   <span class="links-of-author-item">
                     <a href="https://github.com/TdArita" target="_blank" title="GitHub">
                       
-                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://twitter.com/TD_Arita" target="_blank" title="Twitter">
                       
-                        <i class="fa fa-fw fa-globe"></i>Twitter</a>
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://weibo.com/3881107301/" target="_blank" title="Weibo">
                       
-                        <i class="fa fa-fw fa-globe"></i>Weibo</a>
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://www.douban.com/people/70801856/" target="_blank" title="DouBan">
                       
-                        <i class="fa fa-fw fa-globe"></i>DouBan</a>
+                        <i class="fa fa-fw fa-angellist"></i>DouBan</a>
                   </span>
                 
             </div>
@@ -1019,7 +990,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1088,6 +1059,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -1122,6 +1096,16 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 

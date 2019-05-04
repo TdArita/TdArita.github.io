@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Arita&#39;s Blog">
 <meta property="og:description" content="20.JS的数据JS的历史JavaScript是网景的商标™JavaScript7种数据类型number 数字string 字符串boolean 布尔值symbol 符号nullundefinedobject 对象 number 数字二进制 0b11 以0b开头八进制 011   以0开头十六进制 0x11 以0x开头 String 字符串 ‘’和””空字符串 字符串长度0 ‘ ‘和” “中间有野">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-03T12:19:29.376Z">
+<meta property="og:updated_time" content="2019-05-04T07:02:40.633Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="20.JS的数据">
 <meta name="twitter:description" content="20.JS的数据JS的历史JavaScript是网景的商标™JavaScript7种数据类型number 数字string 字符串boolean 布尔值symbol 符号nullundefinedobject 对象 number 数字二进制 0b11 以0b开头八进制 011   以0开头十六进制 0x11 以0x开头 String 字符串 ‘’和””空字符串 字符串长度0 ‘ ‘和” “中间有野">
@@ -131,6 +131,15 @@
 
 
 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-139590704-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
 
@@ -322,18 +331,20 @@
       
         <h2 id="20-JS的数据"><a href="#20-JS的数据" class="headerlink" title="20.JS的数据"></a>20.JS的数据</h2><h3 id="JS的历史"><a href="#JS的历史" class="headerlink" title="JS的历史"></a>JS的历史</h3><h4 id="JavaScript是网景的商标™"><a href="#JavaScript是网景的商标™" class="headerlink" title="JavaScript是网景的商标™"></a>JavaScript是网景的商标™</h4><h4 id="JavaScript7种数据类型"><a href="#JavaScript7种数据类型" class="headerlink" title="JavaScript7种数据类型"></a>JavaScript7种数据类型</h4><p><code>number</code> 数字<br><code>string</code> 字符串<br><code>boolean</code> 布尔值<br><code>symbol</code> 符号<br><code>null</code><br><code>undefined</code><br><code>object</code> 对象</p>
 <h4 id="number-数字"><a href="#number-数字" class="headerlink" title="number 数字"></a><code>number</code> 数字</h4><p>二进制 0b11 以0b开头<br>八进制 011   以0开头<br>十六进制 0x11 以0x开头</p>
-<h4 id="String-字符串"><a href="#String-字符串" class="headerlink" title="String 字符串"></a><code>String</code> 字符串</h4><p> ‘’和””空字符串 字符串长度0<br> ‘ ‘和” “中间有野葛空格 字符串长度1<br> <code>转义</code> 看《编码》 反斜杠\ 正确的向浏览器表达意思<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a = &apos;\&apos;&apos; 单引号</span><br><span class="line">var n = &apos; \n&apos; 回车（13）</span><br><span class="line">var t = &apos; \t&apos; Tab（制表符）</span><br><span class="line">var b = &apos;&apos;\\&apos;&apos; \符号</span><br></pre></td></tr></table></figure></p>
+<h4 id="String-字符串"><a href="#String-字符串" class="headerlink" title="String 字符串"></a><code>String</code> 字符串</h4><p> ‘’和””空字符串 字符串长度0<br> ‘ ‘和” “中间有野葛空格 字符串长度1<br> <code>转义</code> 看《编码》 反斜杠\ 正确的向浏览器表达意思</p>
+<a id="more"></a>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">'\''</span> 单引号</span><br><span class="line"><span class="keyword">var</span> n = <span class="string">' \n'</span> 回车（<span class="number">13</span>）</span><br><span class="line"><span class="keyword">var</span> t = <span class="string">' \t'</span> Tab（制表符）</span><br><span class="line"><span class="keyword">var</span> b = <span class="string">''</span>\\<span class="string">''</span> \符号</span><br></pre></td></tr></table></figure>
 <p> 多行字符串<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> var s = &apos;12345\</span><br><span class="line">            67890&apos;</span><br><span class="line"> </span><br><span class="line"> var s2 = &apos;12345&apos; + &apos;67890&apos; //更好</span><br><span class="line"> </span><br><span class="line"> var s3 = &apos;123456   \       </span><br><span class="line">              67890&apos; //会报错，注意空格的转义</span><br><span class="line"></span><br><span class="line">var s4 = `12345</span><br><span class="line">67890` //ES6 的语法 注意不要写空格，包含回车</span><br></pre></td></tr></table></figure></p>
 <h4 id="boolean-布尔值"><a href="#boolean-布尔值" class="headerlink" title="boolean 布尔值"></a><code>boolean</code> 布尔值</h4><p> 是个人，发命令逻辑学<br> 基本单位 <code>true</code> <code>false</code></p>
 <p> &amp;&amp;与运算\或运算<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a&amp;&amp;b(a,b都为true为真)</span><br><span class="line">a\\b(a,b都为false为falsr)</span><br></pre></td></tr></table></figure></p>
 <h4 id="null-类型-和-undefined-类型"><a href="#null-类型-和-undefined-类型" class="headerlink" title="null  类型 和 undefined 类型"></a><code>null</code>  类型 和 <code>undefined</code> 类型</h4><p>JS的原创 什么都没有<br>区别1:变量没赋值，为undefined<br>区别2:有一个对象，不想赋值，推荐给null var obj = null，有一个非对象，不想赋值，推荐给undefined<br>对象对应null 非对象对应undefined都表示没有给值</p>
-<h4 id="object-对象-哈希表（key-value）"><a href="#object-对象-哈希表（key-value）" class="headerlink" title="object 对象/哈希表（key,value）"></a><code>object</code> 对象/哈希表（key,value）</h4><p>之前的为基本类型，object是复杂类型，由简单类型组成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var name = &apos;arita&apos;</span><br><span class="line">var age = 24</span><br><span class="line">var gender = &apos;male&apos;</span><br><span class="line">如可以表示为</span><br><span class="line">var person = &#123;</span><br><span class="line">&apos;name&apos;:&apos;arita&apos;, //逗号隔开，不一定只有一个值</span><br><span class="line">&apos;age&apos;:24,</span><br><span class="line">&apos;gender&apos;:&apos;male&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>语法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var person=&#123;</span><br><span class="line">    name : &apos;arita&apos;</span><br><span class="line">    age : 24,</span><br><span class="line">    children: &#123; name:&apos;xxx&apos;, age:1,&#125;,    </span><br><span class="line">&#125;</span><br><span class="line">引用</span><br><span class="line">person[&apos;name&apos;] //单引号不能省略</span><br><span class="line">person.name //当符合标识符格式时（特例）</span><br><span class="line">person[name] 相当于 person[&apos;arita&apos; ]</span><br></pre></td></tr></table></figure></p>
+<h4 id="object-对象-哈希表（key-value）"><a href="#object-对象-哈希表（key-value）" class="headerlink" title="object 对象/哈希表（key,value）"></a><code>object</code> 对象/哈希表（key,value）</h4><p>之前的为基本类型，object是复杂类型，由简单类型组成<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">'arita'</span></span><br><span class="line"><span class="keyword">var</span> age = <span class="number">24</span></span><br><span class="line"><span class="keyword">var</span> gender = <span class="string">'male'</span></span><br><span class="line">如可以表示为</span><br><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line"><span class="string">'name'</span>:<span class="string">'arita'</span>, <span class="comment">//逗号隔开，不一定只有一个值</span></span><br><span class="line"><span class="string">'age'</span>:<span class="number">24</span>,</span><br><span class="line"><span class="string">'gender'</span>:<span class="string">'male'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>语法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person=&#123;</span><br><span class="line">    name : <span class="string">'arita'</span></span><br><span class="line">    age : <span class="number">24</span>,</span><br><span class="line">    children: &#123; <span class="attr">name</span>:<span class="string">'xxx'</span>, <span class="attr">age</span>:<span class="number">1</span>,&#125;,    </span><br><span class="line">&#125;</span><br><span class="line">引用</span><br><span class="line">person[<span class="string">'name'</span>] <span class="comment">//单引号不能省略</span></span><br><span class="line">person.name <span class="comment">//当符合标识符格式时（特例）</span></span><br><span class="line">person[name] 相当于 person[<span class="string">'arita'</span> ]</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&apos;&apos; : &apos;arita&apos;//可以</span><br><span class="line">person[&apos;&apos;] = &apos;frank</span><br><span class="line">9a : &apos;arita&apos; //不可以 不符合标识符原则</span><br><span class="line">&apos;9a&apos; : &apos;arita&apos;</span><br><span class="line">//加引号可以都行</span><br></pre></td></tr></table></figure>
 <p>删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">delete person.name //undefined（无value，无key）</span><br><span class="line">delete </span><br><span class="line">person.name = undefined //key存在</span><br></pre></td></tr></table></figure></p>
-<p>遍历对象<br><code>for in</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">for(var key in person)&#123;</span><br><span class="line">console.log(key)</span><br><span class="line">&#125;</span><br><span class="line">for(var key in person)&#123;</span><br><span class="line">console.log(key, person[key]) //不能person.key 因为key是一个字符串</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p> <code>typeof</code>  的BUG<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.typeof null // &apos;object&apos;</span><br><span class="line">typeof fn // &apos; function&apos;</span><br></pre></td></tr></table></figure></p>
-
+<p>遍历对象<br><code>for in</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> key <span class="keyword">in</span> person)&#123;</span><br><span class="line"><span class="built_in">console</span>.log(key)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> key <span class="keyword">in</span> person)&#123;</span><br><span class="line"><span class="built_in">console</span>.log(key, person[key]) <span class="comment">//不能person.key 因为key是一个字符串</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p> <code>typeof</code>  的BUG</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span><span class="keyword">typeof</span> <span class="literal">null</span> <span class="comment">// 'object'</span></span><br><span class="line"><span class="keyword">typeof</span> fn <span class="comment">// ' function'</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -485,25 +496,25 @@
                   <span class="links-of-author-item">
                     <a href="https://github.com/TdArita" target="_blank" title="GitHub">
                       
-                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://twitter.com/TD_Arita" target="_blank" title="Twitter">
                       
-                        <i class="fa fa-fw fa-globe"></i>Twitter</a>
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://weibo.com/3881107301/" target="_blank" title="Weibo">
                       
-                        <i class="fa fa-fw fa-globe"></i>Weibo</a>
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://www.douban.com/people/70801856/" target="_blank" title="DouBan">
                       
-                        <i class="fa fa-fw fa-globe"></i>DouBan</a>
+                        <i class="fa fa-fw fa-angellist"></i>DouBan</a>
                   </span>
                 
             </div>
@@ -550,7 +561,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -619,6 +630,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -653,6 +667,16 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 
